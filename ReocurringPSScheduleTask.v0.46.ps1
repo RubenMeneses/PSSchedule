@@ -148,7 +148,6 @@ else
 
 
     #create task
-    #$TaskResult =Register-ScheduledTask -Action $action -Trigger $triggers -TaskName $TaskName -User $UserName -Password $Passrd -Force -Settings $taskSettings
     $TaskResult =Register-ScheduledTask -Action $action -Trigger $triggers -TaskName $TaskName -Force -Settings $taskSettings
 
 
