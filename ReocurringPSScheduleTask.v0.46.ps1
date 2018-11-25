@@ -15,8 +15,11 @@ function Get-ScriptDirectory
         Split-Path $script:MyInvocation.MyCommand.Path 
     } 
 }
- 
+
+
 $SCRIPT_PARENT   = Get-ScriptDirectory  
+
+$global:ThisScriptFullPath = $MyInvocation.MyCommand.Definition
 
 #Module import
 Import-Module "$SCRIPT_PARENT\Modules\Test-Admin.ps1"
