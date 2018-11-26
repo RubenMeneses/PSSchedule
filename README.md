@@ -7,31 +7,15 @@ The script will create the command in the correct format to run a PowerShell scr
 
 Edit the following input vars before running.
 
-#Powershell Command path
 
-$PSCommand ="$SCRIPT_PARENT\calc.ps1" 
+$PSCommand ="$SCRIPT_PARENT\calc.ps1"   #Powershell Command path
 
+$intervalMInutes=1                      #Reoccuring number of minutes
 
-#Reoccuring number of minutes
+$execMaxMinutes=60                      #Max execution time in minutes
 
-$intervalMInutes=1
+$TaskName = "Anon WatchList"            #Task Name
 
+$RunLevelHigh = $false                  #Runlevel Highest or Limited
 
-#Max execution time in minutes
-
-$execMaxMinutes=60
-
-
-#Task Name
-
-$TaskName = "Anon WatchList"
-
-
-#Runlevel Highest or Limited
-
-$RunLevelHigh = $false
-
-
-#Chose who to run as
-
-$JobRunAs =$RunAsLogedOnUser   
+$JobRunAs =$RunAsLogedOnUser            #Task identity
