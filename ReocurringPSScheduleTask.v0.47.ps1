@@ -33,7 +33,7 @@ Import-Module "$SCRIPT_PARENT\Modules\Elevate.psm1"
 #Input Vars:
 
 #Powershell Command path
-$PSCommand ="$SCRIPT_PARENT\CountSecs.ps1" 
+$PSCommand ="$SCRIPT_PARENT\calc.ps1" 
 
 #Reoccuring number of minutes
 $intervalMInutes=1
