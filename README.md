@@ -1,7 +1,12 @@
 # PSSchedule
-This script simplifies the creation of scheduled tasks for powershell scripts that need to run every x minutes.
+This PowerShell script simplifies the creation of scheduled tasks to run other PowerShell scripts.
+
+It is common for IT Admins to need to run scripts at a regular intervals.
+This scripts takes a number of parameters that need to run every x minutes.
+The script will create the command in the correct format to run a PowerShell script
 
 Edit the following input vars before running.
+
 #Powershell Command path
 $PSCommand ="$SCRIPT_PARENT\calc.ps1" 
 
