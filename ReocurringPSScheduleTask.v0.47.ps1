@@ -38,8 +38,8 @@ $PSCommand ="$SCRIPT_PARENT\calc.ps1"
 #Reoccuring number of minutes
 $intervalMInutes=1
 
-#Executoin minutes seconds
-$execMaxMinutes=77
+#Max execution time in minutes
+$execMaxMinutes=60
 
 #Task Name
 $TaskName = "Anon WatchList"
