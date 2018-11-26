@@ -121,8 +121,8 @@ else
 
 
     #Action for task
-    #$action = New-ScheduledTaskAction -Execute 'Powershell.exe' -Argument "-NoProfile -WindowStyle Hidden -command $PSCommandReformated"
-    $action = New-ScheduledTaskAction -Execute 'Powershell.exe' -Argument "-WindowStyle Maximized -command $PSCommandReformated"
+    $action = New-ScheduledTaskAction -Execute 'Powershell.exe' -Argument "-NoProfile -WindowStyle Hidden -command $PSCommandReformated"
+
 
 
     #clear any default params
